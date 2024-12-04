@@ -36,7 +36,7 @@ const projects = [
   {
     id: 4,
     title: "CoinSpy",
-    description: " Your ultimate tool for real-time cryptocurrency tracking and insights!  Stay ahead of the market and make smarter trading decisions today!",
+    description: " Your ultimate tool for real-time cryptocurrency tracking and insights! Stay ahead of the market",
     image: "/coinspy.png",
     year: "2024",
     link: "https://coinspyer.vercel.app"
