@@ -18,7 +18,7 @@ export default function About() {
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
-          <span className="text-sm font-mono">Back</span>
+          <span className="text-base">Back</span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-6">
@@ -32,14 +32,14 @@ export default function About() {
       </header>
 
       <main>
-        <h1 className="text-4xl font-mono font-bold mb-4">About</h1>
+        <h1 className="text-4xl font-bold mb-4">About</h1>
         <p className="text-lg text-muted-foreground mb-8">Meet Salim Rutaganda, a skilled Frontend Engineer and Product Designer.</p>
 
         <Card className="p-6 md:p-8 mb-8">
           <div className="grid gap-8">
             <div>
-              <p className="text-sm text-muted-foreground font-mono mb-2">INTRODUCTION</p>
-              <h2 className="text-2xl font-mono font-bold mb-4">Frontend Engineer and Product Designer passionate about creating impactful digital experiences</h2>
+              <p className="text-sm text-muted-foreground mb-2">INTRODUCTION</p>
+              <h2 className="text-2xl font-bold mb-4">Frontend Engineer and Product Designer passionate about creating impactful digital experiences</h2>
               <p className="text-muted-foreground mb-8">
                 As a frontend engineer and product designer, I specialize in crafting intuitive and visually appealing user interfaces. Currently working at Ingabo Tech, I leverage my skills in frontend development and design to create seamless digital solutions. My experience spans across various technologies and frameworks, allowing me to build dynamic and responsive web applications.
               </p>
@@ -98,7 +98,7 @@ export default function About() {
         </Card>
 
         <section className="space-y-6">
-          <h2 className="text-xl font-mono font-bold">Career</h2>
+          <h2 className="text-xl font-bold">Career</h2>
           <Card className="p-6">
             <div className="space-y-4">
               <div className="flex items-start gap-2">

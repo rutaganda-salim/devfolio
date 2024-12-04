@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { JetBrains_Mono } from "next/font/google"
+import { GeistMono } from 'geist/font/mono';
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -17,10 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={jetbrainsMono.className}>
+      <body className={GeistMono.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

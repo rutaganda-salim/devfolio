@@ -81,7 +81,7 @@ export default function ProjectsPage() {
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
-          <span className="text-base font-mono">Back</span>
+          <span className="text-base">Back</span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-6">
@@ -95,7 +95,7 @@ export default function ProjectsPage() {
       </header>
 
       <main>
-        <h1 className="text-4xl font-mono font-bold mb-4">Projects</h1>
+        <h1 className="text-4xl font-bold mb-4">Projects</h1>
         <p className="text-lg text-muted-foreground mb-8">
           Explore my portfolio of projects spanning from 2023 to 2024.
         </p>
@@ -107,7 +107,7 @@ export default function ProjectsPage() {
                 key={year}
                 variant={selectedYear === year ? "default" : "outline"}
                 onClick={() => setSelectedYear(year)}
-                className="font-mono text-base"
+                className="text-base"
               >
                 {year}
               </Button>
@@ -138,7 +138,7 @@ export default function ProjectsPage() {
                 
                 </div>
                 <div className="p-4">
-                  <h2 className="text-xl font-mono font-bold mb-2">{project.title}</h2>
+                  <h2 className="text-xl font-bold mb-2">{project.title}</h2>
                   <p className="text-muted-foreground mb-4">{project.description}</p>
                   <div className="flex items-center justify-between mt-12">
                     <div className="inline-block bg-muted px-2.5 py-0.5 rounded text-xs font-bold">
