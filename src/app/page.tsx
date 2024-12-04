@@ -43,9 +43,11 @@ export default function Home() {
             ].map((item) => (
               <li key={item}>
                 <Link 
-                  href={`/${item.toLowerCase()}`}
-                  className="flex items-center justify-between group text-muted-foreground hover:bg-accent transition-colors rounded-lg py-2 px-4"
-                >
+                    href={item === "Chat" ? "https://salixai.vercel.app" : `/${item.toLowerCase()}`}
+                    target={item === "Chat" ? "_blank" : undefined}
+                    rel={item === "Chat" ? "noopener noreferrer" : undefined}
+                    className="flex items-center justify-between group text-muted-foreground hover:bg-accent transition-colors rounded-lg py-2 px-4"
+                  >
                   <span>{item}</span>
                   <ChevronRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>

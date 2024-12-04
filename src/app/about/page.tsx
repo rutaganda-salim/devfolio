@@ -25,8 +25,8 @@ export default function About() {
           <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Home</Link>
           <Link href="/about" className="text-sm font-medium">About</Link>
           <Link href="/projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
-          <Link href="/setup" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Setup</Link>
-          <Link href="/shop" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Shop</Link>
+          <Link href="/skills" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Skills</Link>
+          <Link href="https://salixai.vercel.app" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Chat</Link>
           <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
         </nav>
       </header>
