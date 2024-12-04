@@ -36,7 +36,7 @@ const projects = [
   {
     id: 4,
     title: "CoinSpy",
-    description: "A comprehensive Food Ordering App UI Kit featuring intuitive interfaces for seamless user experiences.",
+    description: " Your ultimate tool for real-time cryptocurrency tracking and insights!  Stay ahead of the market and make smarter trading decisions today!",
     image: "/coinspy.png",
     year: "2024",
     link: "https://coinspyer.vercel.app"
