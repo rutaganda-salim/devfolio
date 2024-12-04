@@ -1,6 +1,7 @@
+// src/app/contact/page.tsx
 'use client'
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Send } from 'lucide-react'
 import { Button } from "@/components/ui/button"
@@ -8,25 +9,34 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false)
   const { toast } = useToast()
+  const form = useRef<HTMLFormElement | null>(null);
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setIsLoading(true)
-
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    })
-    
-    setIsLoading(false)
-    event.currentTarget.reset()
-  }
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (form.current) {
+      emailjs
+        .sendForm('service_6qq1lyo', 'template_gb4q19y', form.current, {
+          publicKey: '7EOKAlCB8z95FtyP-',
+        })
+        .then(
+          () => {
+            toast({
+              title: "Message sent!",
+              description: "Thanks for reaching out. I'll get back to you soon.",
+            });
+            form.current.reset(); // Reset the form after successful submission
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground p-4 md:p-8 max-w-5xl mx-auto">
@@ -55,7 +65,7 @@ export default function Contact() {
           Have a question or want to work together? Feel free to reach out.
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form ref={form} onSubmit={sendEmail} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <Label htmlFor="name">Name</Label>
@@ -63,6 +73,7 @@ export default function Contact() {
                 id="name"
                 placeholder="Your name"
                 required
+                name="name"
               />
             </div>
             <div className="space-y-2">
@@ -72,6 +83,7 @@ export default function Contact() {
                 type="email"
                 placeholder="your@email.com"
                 required
+                name="email"
               />
             </div>
           </div>
@@ -82,6 +94,7 @@ export default function Contact() {
               id="subject"
               placeholder="What's this about?"
               required
+              name="subject"
             />
           </div>
 
@@ -92,6 +105,7 @@ export default function Contact() {
               placeholder="Your message..."
               required
               className="min-h-[150px] resize-none"
+              name="message"
             />
           </div>
 
@@ -107,4 +121,3 @@ export default function Contact() {
     </div>
   )
 }
-
