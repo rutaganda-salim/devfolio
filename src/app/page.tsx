@@ -56,7 +56,7 @@ export default function Home() {
 
         <section className="mb-6">
           <h2 className="text-sm text-muted-foreground mb-6">ANOTHER LINKS</h2>
-          <div className="space-y-4 pl-2">
+          <div className="space-y-4 pl-4">
             <Link 
               href="#"
               className="flex items-center justify-center gap-2 w-full border rounded-md p-2 text-muted-foreground hover:bg-accent transition-colors"
