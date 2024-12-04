@@ -69,7 +69,7 @@ export default function SkillsPage() {
           <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
           <Link href="/projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
           <Link href="/skills" className="text-sm font-medium">Skills</Link>
-          <Link href="https://salixai.vercel.app" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Chat</Link>
+          <Link href="https://salixai.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Chat</Link>
           <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
         </nav>
       </header>

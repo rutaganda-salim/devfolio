@@ -60,7 +60,8 @@ export default function Home() {
           <h2 className="text-sm text-muted-foreground mb-6">ANOTHER LINKS</h2>
           <div className="space-y-4 pl-4">
             <Link 
-              href="#"
+              href="https://github.com/rutaganda-salim"
+              target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full border rounded-md p-2 text-muted-foreground hover:bg-accent transition-colors"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
@@ -70,7 +71,8 @@ export default function Home() {
             </Link>
             <div className="grid grid-cols-2 gap-1">
               <Link 
-                href="#"
+                href="https://figma.com/@salimrutaganda"
+                target="_blank" rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 border rounded-md py-2 hover:bg-accent transition-colors"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
@@ -79,7 +81,8 @@ export default function Home() {
                 <span>Figma</span>
               </Link>
               <Link 
-                href="#"
+                href="https://linkedin.com/in/salimrutaganda"
+                target="_blank" rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 border rounded-md py-2 hover:bg-accent transition-colors"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
@@ -121,16 +124,16 @@ export default function Home() {
           <div className={`absolute inset-0 transition-opacity duration-300 ${showSocials ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
             <div className="flex items-center justify-between">
               <div className="flex gap-2">
-                <Link href="#" className="p-2 rounded-md hover:bg-accent transition-colors">
+                <Link href="https://x.com/salimnunez01" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md hover:bg-accent transition-colors">
                   <Twitter className="h-5 w-5 text-muted-foreground" />
                 </Link>
-                <Link href="#" className="p-2 rounded-md hover:bg-accent transition-colors">
+                <Link href="https://instagram.com/salimnunez01" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md hover:bg-accent transition-colors">
                   <Instagram className="h-5 w-5 text-muted-foreground" />
                 </Link>
-                <Link href="#" className="p-2 rounded-md hover:bg-accent transition-colors">
+                <Link href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md hover:bg-accent transition-colors">
                   <Facebook className="h-5 w-5 text-muted-foreground" />
                 </Link>
-                <Link href="#" className="p-2 rounded-md hover:bg-accent transition-colors">
+                <Link href="https://dribbble.com/laminx" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md hover:bg-accent transition-colors">
                 <Dribbble className="h-5 w-5 text-muted-foreground" />
                 </Link>
                 
