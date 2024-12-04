@@ -127,7 +127,7 @@ export default function ProjectsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map(project => (
-            <Link key={project.id} href={project.link}>
+            <Link key={project.id} href={project.link} target="_blank" rel="noopener noreferrer"  >
               <Card className="group relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
                 <div className="aspect-video relative">
                   <img
