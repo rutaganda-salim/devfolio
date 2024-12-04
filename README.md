@@ -1,4 +1,4 @@
-# 🚀 Portfolio - Frontend Developer & Product Designer  
+# 🚀 Portfolio - Frontend Engineer & Product Designer  
 
 Welcome to my portfolio! This repository highlights my work as a **Frontend Developer** and **Product Designer**, showcasing a blend of clean code, responsive designs, and user-centric experiences.  
 
