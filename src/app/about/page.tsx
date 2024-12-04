@@ -44,7 +44,7 @@ export default function About() {
                 As a frontend engineer and product designer, I specialize in crafting intuitive and visually appealing user interfaces. Currently working at Ingabo Tech, I leverage my skills in frontend development and design to create seamless digital solutions. My experience spans across various technologies and frameworks, allowing me to build dynamic and responsive web applications.
               </p>
               <p className="text-muted-foreground mb-8">
-                I'm passionate about staying up-to-date with the latest trends in frontend development and UX/UI design. My goal is to create products that not only meet user needs but also provide delightful experiences.
+                I&apos;m passionate about staying up-to-date with the latest trends in frontend development and UX/UI design. My goal is to create products that not only meet user needs but also provide delightful experiences.
               </p>
               
               <Separator className="my-8" />

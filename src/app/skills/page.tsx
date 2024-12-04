@@ -77,7 +77,7 @@ export default function SkillsPage() {
       <main className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl  font-bold mb-4">Skills</h1>
         <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-12 lg:mb-16 max-w-3xl">
-          Here's an overview of my technical skills and proficiencies.
+          Here&apos;s an overview of my technical skills and proficiencies.
         </p>
 
         <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
