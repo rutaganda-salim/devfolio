@@ -28,7 +28,7 @@ export default function Home() {
           <div className="flex justify-between items-start mb-2">
             <h1 className="text-4xl font-bold whitespace-nowrap">Salim Rutaganda</h1>
           </div>
-          <p className="text-muted-foreground">Frontend engineer / Product designer</p>
+          <p className="text-muted-foreground">Software Engineer</p>
         </div>
 
         <nav className="mb-8">

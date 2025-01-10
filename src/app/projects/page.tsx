@@ -11,6 +11,14 @@ import { Card } from "@/components/ui/card"
 const projects = [
   {
     id: 1,
+    title: "Careervault",
+    description: " Discover hidden job opportunities on LinkedIn before anyone else.",
+    image: "/careervault.png",
+    year: "2025",
+    link: "https://careervault.vercel.app"
+  },
+  {
+    id: 2,
     title: "Fizzy",
     description: "3D animated website using Next.js,Three.js, prismic.io and framer motion.",
     image: "/fizzy.png",
@@ -18,7 +26,7 @@ const projects = [
     link: "https://fizzyd.vercel.app"
   },
   {
-    id: 2,
+    id: 3,
     title: "Ingabo Tech Website",
     description: "A modern, responsive landing page designed to showcase and elevate Ingabo Tech company's brand.",
     image: "/ingab.png",
@@ -26,7 +34,7 @@ const projects = [
     link: "https://ingabotech.com"
   },
   {
-    id: 3,
+    id: 4,
     title: "Feasto",
     description: "A comprehensive Food Ordering App UI Kit featuring intuitive interfaces for seamless user experiences.",
     image: "/feasto.png",
@@ -34,7 +42,7 @@ const projects = [
     link: "https://www.figma.com/community/file/1445043327378504859"
   },
   {
-    id: 4,
+    id: 5,
     title: "CoinSpy",
     description: " Your ultimate tool for real-time cryptocurrency tracking and insights! Stay ahead of the market",
     image: "/coinspy.png",
@@ -42,7 +50,7 @@ const projects = [
     link: "https://coinspyer.vercel.app"
   },
   {
-    id: 5,
+    id: 6,
     title: "Salix AI",
     description: "A personal AI chatbot that shares my story and engages users with interactive conversations!",
     image: "/salix.png",
@@ -50,7 +58,7 @@ const projects = [
     link: "https://salixai.vercel.app"
   },
   {
-    id: 6,
+    id: 7,
     title: "Shadow Flux",
     description: "Shadow Flux is a immersive vscode theme with deep, shadowy tones and vibrant syntax highlighting.",
     image: "/shadowflux.png",
@@ -60,7 +68,7 @@ const projects = [
   
 ]
 
-const years = ["All", "2024", "2023",]
+const years = ["All","2025", "2024", "2023",]
 
 export default function ProjectsPage() {
   const [selectedYear, setSelectedYear] = useState("All")
