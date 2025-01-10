@@ -108,8 +108,8 @@ export default function About() {
         <div className="flex items-start gap-2">
           <Monitor className="h-5 w-5 mt-1 text-muted-foreground" />
           <div>
-            <h3 className="font-medium">Software Engineer and Product Designer</h3>
-            <p className="text-sm text-muted-foreground">Ingabo Tech • Current</p>
+            <h3 className="font-medium">Full stack Software Engineer </h3>
+            <p className="text-sm text-muted-foreground">Freelance</p>
           </div>
         </div>
       </div>
@@ -127,6 +127,14 @@ export default function About() {
         <>
           <Separator className="my-4" />
           <div className="space-y-4">
+          <div className="flex items-start gap-2">
+              <Monitor className="h-5 w-5 mt-1 text-muted-foreground" />
+              <div>
+                <h4 className="font-medium">Full stack Software Engineer</h4>
+                <p className="text-sm text-muted-foreground">IngaboTech</p>
+                <p className="text-sm text-muted-foreground">September 2024 - January 2024</p>
+              </div>
+            </div>
             <div className="flex items-start gap-2">
               <Monitor className="h-5 w-5 mt-1 text-muted-foreground" />
               <div>
@@ -151,6 +159,7 @@ export default function About() {
                 <p className="text-sm text-muted-foreground">November 2024 - December 2024</p>
               </div>
             </div>
+           
           </div>
         </>
       )}
