@@ -12,10 +12,10 @@ const projects = [
   {
     id: 1,
     title: "Careervault",
-    description: " Discover hidden job opportunities on LinkedIn before anyone else.",
+    description: " Discover hidden job opportunities on LinkedIn before anyone else. still underdevelopment!",
     image: "/careervault.png",
     year: "2025",
-    link: "https://careervault.vercel.app"
+    link: "https://careervault.work"
   },
   {
     id: 2,
